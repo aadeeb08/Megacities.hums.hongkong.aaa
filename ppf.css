@@ -1,0 +1,305 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    background-image: url("/pexels-ansel-lee-3130060.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+h2 {
+  position: absolute;
+  top: 8%;
+  left: 32.5%;
+  right: 20%; 
+  font-size: 75px;
+  font-family: cursive;
+  color:white ;
+}
+
+.me {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+    right: 20%; 
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(45, 46, 48, 0.7);
+    color:whitesmoke ;
+}
+
+/* .hlc {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: x-large;
+} */
+
+/* .pu {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: x-large;
+} */
+
+/* .ls {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: x-large;
+} */
+
+.pull {
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  left: 50.5%;
+  right: 19.5%;
+  font-size: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(45, 46, 48, 0.7);
+  color:whitesmoke ;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgba(45, 46, 48, 0.7);
+}
+
+/* section {
+  margin: 1rem 0 0 1rem;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  right: 20%; 
+} */
+
+/* section > .pull {
+  display: inline-block;
+  background-color: rgba(45, 46, 48, 0.7);
+  padding: 2rem;
+  font-size: 2rem;
+} */
+
+/* #pull {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  width: 100%;
+  box-shadow: 0.3rem 0.3rem 0.3rem grey;
+  z-index: 1;
+} */
+
+/* #pull .pull {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s ease-in-out;
+} */
+
+/* #pull .pull:hover {
+  color: grey;
+  background-color: #fff;
+} */
+
+/* section:hover #pull {
+  display: block;
+} */
+
+/* section:hover > .pull {
+  background-color: rgba(31, 31, 114, 0.815);
+} */
+
+/* .eo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: x-large;
+} */
+
+/* .go {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: x-large;
+} */
+
+/* .ei {
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  font-size: x-large;
+} */
+
+.push {
+    position: absolute;
+    text-align: center;
+    top: 45%;
+    left: 19.5%;
+    right: 50.5%;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(45, 46, 48, 0.7);
+    color:whitesmoke ;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgba(45, 46, 48, 0.7);
+}
+
+/* section {
+  margin: 1rem 0 0 1rem;
+  display: inline-block;
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  right: 20%; 
+} */
+
+/* section > .push {
+  display: inline-block;
+  background-color: rgba(45, 46, 48, 0.7);
+  padding: 2rem;
+  font-size: 2rem;
+} */
+
+/* #push {
+  display: none;
+  position: absolute;
+  background-color: grey;
+  width: 100%;
+  box-shadow: 0.3rem 0.3rem 0.3rem grey;
+  z-index: 1;
+} */
+
+/* #push .push {
+  display: block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  transition: all 0.5s ease-in-out;
+} */
+
+/* #push .push:hover {
+  color: grey;
+  background-color: #fff;
+} */
+
+/* section:hover #push {
+  display: block;
+} */
+
+/* section:hover > .push {
+  background-color: rgba(31, 31, 114, 0.815);
+} */
+
+.main-nav {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .toggle-btn {
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .toggle-btn div {
+    height: 4px;
+    width: 25px;
+    background-color: white;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .toggle-btn div::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    height: 4px;
+    width: 40px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .toggle-btn div::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    height: 4px;
+    width: 40px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .toggle-btn.open div {
+    background-color: transparent;
+  }
+  
+  .toggle-btn.open div::before {
+    transform: rotate(405deg) translateY(4px);
+  }
+  
+  .toggle-btn.open div::after {
+    transform: rotate(-405deg) translate(20px, -4px);
+  }
+  
+  .main-header {
+    background-color: #4b5d67;
+    width: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: 10;
+  }
+  
+  .main-header.open {
+    width: 350px;
+  }
+  
+  .main-header.open ul {
+    opacity: 1;
+    z-index: 10;
+    pointer-events: all;
+  }
+  
+  .main-header ul {
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .main-header ul li {
+    list-style-type: none;
+    margin: 10vh 0;
+  }
+  
+  .main-header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .overlay.open {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsla(201, 16%, 35%, 0.7);
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+  }
+  
